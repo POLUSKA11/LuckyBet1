@@ -93,20 +93,7 @@ export default {
     },
   },
   created() {
-    console.log('--- App.vue CREATED ---');
-    console.log('Backend URL:', process.env.VUE_APP_BACKEND_URL);
-    console.log('Socket URL:', process.env.VUE_APP_SOCKET_URL);
-    console.log('Initial generalSettings:', this.generalSettings);
-    console.log('Initial authToken:', this.authToken);
-    console.log('Initial authUser:', this.authUser);
-
     this.socketConnectGeneral();
-  },
-  mounted() {
-    console.log('--- App.vue MOUNTED ---');
-    console.log('Mounted generalSettings:', this.generalSettings);
-    console.log('Mounted authToken:', this.authToken);
-    console.log('Mounted authUser:', this.authUser);
   },
 };
 </script>
